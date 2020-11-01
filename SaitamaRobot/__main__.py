@@ -53,16 +53,11 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
+I am Mars' bot, the Guardian of Moon Prism Groups 🌙
 You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
-the things I can help you with.
-
 *Main* commands available:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
@@ -78,10 +73,9 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/46e6d9dfcb3eb9eae95d9.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/6a28a67f2946253326e17.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Paul
 There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
 
@@ -201,26 +195,25 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Saitama to your group",
-                            url="t.me/{}?startgroup=true".format(
-                                context.bot.username))
+                            text="DM Mars 🧿",
+                            url="t.me/atriptomars")
                     ],
                      [
                          InlineKeyboardButton(
-                             text="🚑 Support Group",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             text="Assistant Reviews 🔮",
+                             url=f"https://t.me/joinchat/AAAAAFDW7HRx3i5j94lwvA"),
                          InlineKeyboardButton(
-                             text="🔔 Updates Channel",
-                             url="https://t.me/OnePunchUpdates")
+                             text="Mars' Graphics 🎨",
+                             url="https://t.me/joinchat/AAAAAFLN9oKi9S4WojtMwA")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🧾 Getting started guide",
-                             url="https://t.me/OnePunchUpdates/29")
+                             text="✨ Moon Prism ALL FC ✨",
+                             url="https://t.me/joinchat/NPH2GVlbgU2lLDFW35GR4g")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🗄 Source code",
+                             text="Source Code 💌",
                              url="https://github.com/AnimeKaizoku/SaitamaRobot")
                      ]]))
     else:
