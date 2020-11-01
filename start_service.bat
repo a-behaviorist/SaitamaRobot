@@ -29,3 +29,5 @@ if '%errorlevel%' NEQ '0' (
 :: stops the service and then starts it 
 net stop SaitamaRobot
 net start SaitamaRobot
+
+PAUSE
