@@ -214,29 +214,37 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[
-                        InlineKeyboardButton(
-                            text="DM Mars 🧿",
-                            url="t.me/atriptomars")
-                    ],
-                     [
-                         InlineKeyboardButton(
-                             text="Assistant Reviews 🔮",
-                             url=f"https://t.me/joinchat/AAAAAFDW7HRx3i5j94lwvA"),
-                         InlineKeyboardButton(
-                             text="Mars' Graphics 🎨",
-                             url="https://t.me/joinchat/AAAAAFLN9oKi9S4WojtMwA")
-                     ],
-                     [
-                         InlineKeyboardButton(
-                             text="✨ Moon Prism ALL FC ✨",
-                             url="https://t.me/joinchat/NPH2GVlbgU2lLDFW35GR4g")
-                     ],
-                     [
-                         InlineKeyboardButton(
-                             text="Source Code 💌",
-                             url="https://github.com/AnimeKaizoku/SaitamaRobot")
-                     ]]))
+                    [
+                        [
+                            InlineKeyboardButton(
+                                text="DM Mars 🧿", url="t.me/atriptomars"
+                            )
+                        ],
+                        [
+                            InlineKeyboardButton(
+                                text="Assistant Reviews 🔮",
+                                url=f"https://t.me/joinchat/AAAAAFDW7HRx3i5j94lwvA",
+                            ),
+                            InlineKeyboardButton(
+                                text="Mars' Graphics 🎨",
+                                url="https://t.me/joinchat/AAAAAFLN9oKi9S4WojtMwA",
+                            ),
+                        ],
+                        [
+                            InlineKeyboardButton(
+                                text="✨ Moon Prism ALL FC ✨",
+                                url="https://t.me/joinchat/NPH2GVlbgU2lLDFW35GR4g",
+                            )
+                        ],
+                        [
+                            InlineKeyboardButton(
+                                text="Source Code 💌",
+                                url="https://github.com/AnimeKaizoku/SaitamaRobot",
+                            )
+                        ],
+                    ]
+                ),
+            )
     else:
         update.effective_message.reply_text(
             "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
