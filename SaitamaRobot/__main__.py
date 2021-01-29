@@ -98,14 +98,9 @@ And the following:
 SAITAMA_IMG = "https://telegra.ph/file/6a28a67f2946253326e17.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-<<<<<<< HEAD
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
-=======
  You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at @OnePunchDev."""
->>>>>>> 15d9e5710a329c5325dfc46f05bbd01c30987715
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -219,7 +214,6 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-<<<<<<< HEAD
                     [[
                         InlineKeyboardButton(
                             text="DM Mars 🧿",
@@ -243,42 +237,6 @@ def start(update: Update, context: CallbackContext):
                              text="Source Code 💌",
                              url="https://github.com/AnimeKaizoku/SaitamaRobot")
                      ]]))
-=======
-                    [
-                        [
-                            InlineKeyboardButton(
-                                text="☑️ Add Saitama to your group",
-                                url="t.me/{}?startgroup=true".format(
-                                    context.bot.username
-                                ),
-                            )
-                        ],
-                        [
-                            InlineKeyboardButton(
-                                text="🚑 Support Group",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
-                            ),
-                            InlineKeyboardButton(
-                                text="🔔 Updates Channel",
-                                url="https://t.me/OnePunchUpdates",
-                            ),
-                        ],
-                        [
-                            InlineKeyboardButton(
-                                text="🧾 Getting started guide",
-                                url="https://t.me/OnePunchUpdates/29",
-                            )
-                        ],
-                        [
-                            InlineKeyboardButton(
-                                text="🗄 Source code",
-                                url="https://github.com/AnimeKaizoku/SaitamaRobot",
-                            )
-                        ],
-                    ]
-                ),
-            )
->>>>>>> 15d9e5710a329c5325dfc46f05bbd01c30987715
     else:
         update.effective_message.reply_text(
             "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
